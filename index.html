@@ -1,66 +1,52 @@
-<html>
-
-<head>
-<title>Kartik&</title>
-</head>
-
-<body>
-<body bgcolor="black">
-<table class="login_tb1">  
-    <tr align="center" valign="middle">  
-        <td height="100%">  
-        <table class="login_tb2" cellSpacing=0 cellPadding=0 border=0  
-            align="center"  
-        >  
-            <tr valign="middle">  
-                <td class="login_td1" colSpan=2><font face="黑体" size="4px"  
-                    color="#196ed1"  
-                >网上书店系统-用户登录</font></td>  
-            </tr>  
-            <tr>  
-                <td width="203"><img height="200" width="202"  
-                    src="./images/login_Page/loginPage_02.jpg" alt="此处显示登录图片"  
-                /></td>  
-                <td class="login_td2">  
-                <form action="LoginJsp.jsp" name="login" method="post">  
-                <table>  
-                    <tr>  
-                        <td width="66" height="20" class="login_td">登录名：</td>  
-                        <td width="115" height="20" class="login_td"><input  
-                            class="login_input" type="text" name="username"  
-                        ></td>  
-                        <td></td>  
-                    </tr>  
-                    <tr>  
-                        <td height="20" class="login_td">密 码：</td>  
-                        <td height="20" class="login_td"><input  
-                            type="password" name="password" class="login_input"></td>  
-                        <td></td>  
-                    </tr>  
-                    <tr>  
-                        <td height="20" colspan="2" align="center"><input  
-                            type="reset" value="重置" class="login_button"  
-                        />   <input type="button" value="登录"  
-                            class="login_button" onClick="loginClick()"  
-                        />  </td>  
-                        <td class="login_td" align="left" width=71><a  
-                            href="Regist.html"  
-                        >新用户注册</a></td>  
-                    </tr>  
-                </table>  
-                </form>  
-                </td>  
-            </tr>  
-            <tr>  
-                <td colSpan=2  
-                    style="background-image: url(images/login_Page/loginPage_04.jpg)"  
-                    height=56 align="center" class="login_td"  
-                >版权所有</td>  
-            </tr>  
-        </table>  
-        </td>  
-    </tr>  
-</table>
-</body>
-
-</html>
+<!DOCTYPE html>  
+ <style type="text/css">  
+body{  
+    background-color: #555555;  
+}  
+#titel_img{  
+  
+  width:417px;  
+}  
+#log_image {  
+    z-index: 0;  
+    position: absolute;  
+    left: 50%;top:50%;  
+    height: 151px;width:400;  
+    margin-left: -200px;margin-top:-100px;  
+}  
+#text_box{  
+    position: absolute;  
+    top:65px;  
+    left:40px;  
+    z-index: 1;  
+   /* background-color: #FF0000;*/  
+}  
+#text_box div{  
+  
+color:#FFFFFF;  
+}  
+#titel_text{  
+        position: absolute;  
+    }  
+ </style>  
+<html>  
+<head>  
+    <title>登录界面</title>  
+</head>  
+<body>  
+<form>  
+<div id="log_image">  
+    <div id="titel_text">  
+      <img id=titel_img src="header_logo.gif">  
+        </div>  
+    <img id="log" src="login.gif"  >  
+    <div id="text_box">  
+      <div>用户名: <input type="text"></dvi>  
+        <div>密  码: <input type="password"></div>  
+       <div> 验证码: <input type="text"><img src="yan.bmp" style="position:relative;top: 5px"><input type="button" value="登录"></div>  
+    </div>  
+</div>  
+</form>  
+  
+</body>  
+</html>  
